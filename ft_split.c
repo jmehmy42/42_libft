@@ -75,7 +75,7 @@ static int	ft_allocate(char **tab, const char *s, char c)
 		{
 			i = 0;
 			while (i < word)
-				free(tab[i]);
+				free(tab[i++]);
 			free(tab);
 			return (0);
 		}
