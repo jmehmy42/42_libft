@@ -88,11 +88,9 @@ static int	ft_allocate(char **tab, const char *s, char c)
 
 char	**ft_split(const char *s, char c)
 {
-	int		i;
 	int		size;
 	char	**new_s;
 
-	i = 0;
 	if (s == NULL)
 		return (NULL);
 	size = count_words(s, c);
