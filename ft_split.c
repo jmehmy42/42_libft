@@ -99,6 +99,7 @@ char	**ft_split(const char *s, char c)
 		return (NULL);
 	if (!ft_allocate(new_s, s, c))
 	{
+		free_string(new_s);
 		return (NULL);
 	}
 	return (new_s);
